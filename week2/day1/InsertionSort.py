@@ -16,17 +16,17 @@ import sys
 
 def insertionSort1(n, arr):
     # Write your code here
-        j = arr[n - 1]
-        for k in range((n-1),0,-1):
-            if j>arr[k-1]:
-                arr[k] = j
-                print(" ".join([str(i) for i in arr]))
-                break
-            else:  
-                arr[k] = arr[k-1]
-                print(" ".join([str(i) for i in arr]))
-            
-    
+    target = arr[-1]
+    idx = n-2
+
+    while (target < arr[idx]) and (idx >= 0):
+        arr[idx+1] = arr[idx]
+        print(*arr)
+        idx -= 1
+
+    arr[idx+1] = target
+    print(*arr)
+
 
 if __name__ == '__main__':
     n = int(input().strip())
@@ -34,3 +34,4 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
     insertionSort1(n, arr)
+
