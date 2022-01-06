@@ -2,13 +2,9 @@ class Solution:
     def getHint(self, secret: str, guess: str) -> str:
         i = 0
         j = 0
-        
-        secrets = ['']*len(secret)
-        guesses = ['']*len(guess)
-        
-        for k in range(len(secret)):
-            secrets[k] = secret[k]
-            guesses[k] = guess[k]
+
+        secrets = [k for k in secret]
+        guesses = [k for k in guess]
             
         for k in range(len(secret)):
             if secret[k] == guess[k]: 
