@@ -22,3 +22,4 @@ class Solution:
         return res
      
     # time complexity -> O(k + l)
+    # space complexity -> O(k)
