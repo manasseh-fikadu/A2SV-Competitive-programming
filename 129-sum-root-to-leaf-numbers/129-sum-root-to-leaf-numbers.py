@@ -9,12 +9,11 @@ class Solution:
         def helper(node, num):
             if node is None:
                 return 0
-            
+
             num = num * 10 + node.val
             
             if node.left == None and node.right == None:
                 return num
             
             return helper(node.left, num) + helper(node.right, num)
-        
         return helper(root, 0)
