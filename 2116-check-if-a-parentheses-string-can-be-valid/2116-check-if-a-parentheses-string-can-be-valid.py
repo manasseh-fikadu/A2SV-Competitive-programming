@@ -2,11 +2,7 @@ class Solution:
     def canBeValid(self, s: str, locked: str) -> bool:
         if len(s) % 2 != 0:
             return False
-        
-        # Scan from left to right and greedily match a locked ')' to an earlier locked '('.
-        # If running out of locked '(', start consuming unlocked.
-        # Once all ')' paired, from right to left, pair locked '(' with unlocked.
-        # After all locked processed, return True since the rest unlocked can always be manipulated to keep the string valid.
+
         locked_n_open = []
         unlocked = []
         
