@@ -1,39 +1,5 @@
 class Solution:
     def minimumOperations(self, nums: List[int]) -> int:
-#         odd, even = [], []
-#         n = len(nums)
-#         if len(nums) == 1:
-#             return 0
-#         for i in range(1, n, 2):
-#             odd.append(nums[i])
-#         for i in range(0, n, 2):
-#             even.append(nums[i])
-        
-#         oddFreq = Counter(odd)
-#         evenFreq = Counter(even)
-                 
-#         oddFreqList = oddFreq.most_common(2)
-#         evenFreqList = evenFreq.most_common(2)
-        
-#         oddMax = oddFreqList[0][0]
-#         evenMax = evenFreqList[0][0]
-        
-#         oddMaxFreq = oddFreqList[0][1]
-#         if len(oddFreqList) > 1:
-#             odd2ndMaxFreq = oddFreqList[1][1]
-#         else:
-#             odd2ndMaxFreq = 0
-#         evenMaxFreq = evenFreqList[0][1]
-#         if len(oddFreqList) > 1:
-#             even2ndMaxFreq = evenFreqList[1][1]
-#         else:
-#             even2ndMaxFreq = 0
-        
-#         if oddMax != evenMax:
-#             return n - oddMaxFreq - evenMaxFreq
-        
-#         return min(n - oddMaxFreq - even2ndMaxFreq, n - odd2ndMaxFreq - evenMaxFreq)
-
         odds = Counter()
         evens = Counter()
         for i, x in enumerate(nums):
