@@ -4,33 +4,41 @@ class TrieNode:
         self.endOfWord = False
 
 class Solution:
-    def longestWord(self, words: List[str]) -> str:
-        root = TrieNode()
+    def __init__(self):
+            self.root = TrieNode()
+            self.root.endOfWord = True
 
-        def insert(word):
-            curr = root
-            for char in word:
-                if char not in curr.children:
-                    curr.children[char] = TrieNode()
-                curr = curr.children[char]
-            curr.endOfWord = True
-            
-        for word in words:
-            insert(word)
-            
-        res = ''
+    def insert(self, word) -> None:
+        curr = self.root
+        for char in word:
+            if char not in curr.children:
+                curr.children[char] = TrieNode()
+            curr = curr.children[char]
+        curr.endOfWord = True
         
+    def longestWord(self, words: List[str]) -> str:
         for word in words:
-            if len(word) < len(res): continue
-
-            curr = root
-
-            for letter in word:
-                curr = curr.children[letter]
-                if not curr.endOfWord: break
+            self.insert(word)
+        return self.dfs(self.root)
+    
+    def dfs(self, node, string = ''):
+        if  not node.endOfWord:
+            return string[:-1]
+        if not node.children:
+            return string
+        
+        maxVal = ''
+        
+        for child in node.children:
+            res = self.dfs(node.children[child], string + child)
             
-            if curr.endOfWord:
-                if (len(word) > len(res) or (len(word) == len(res) and word < res)):
-                    res = word        
+            if len(res) > len(maxVal):
+                maxVal = res
+        
+            elif len(res) < len(maxVal):
+                continue
             
-        return res
+            elif maxVal > res:
+                maxVal = res
+        
+        return maxVal
