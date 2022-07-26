@@ -1,25 +1,27 @@
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-        adj_lst = {}
-        outcome_count = {}
-        queue = deque()
+        adj_list = defaultdict(list)
+        indegree = defaultdict(int)
         res = []
-        
+        queue = deque()
+
         for i, nei in enumerate(graph):
-            outcome_count[i] = len(nei)
-            if not outcome_count[i]:
+            indegree[i] = len(nei)
+            if indegree[i] == 0:
                 queue.append(i)
             for j in nei:
-                adj_lst.setdefault(j, []).append(i)
-                
+                adj_list[j].append(i)
+
         while queue:
-            node = queue.popleft()
-            res.append(node)
-            for nei in adj_lst.get(node, []):
-                outcome_count[nei] -= 1
-                if not outcome_count[nei]:
-                    queue.append(nei)
-        
+            top = queue.popleft()
+            res.append(top)
+            for node in adj_list[top]:
+                indegree[node] -= 1
+                if indegree[node] == 0:
+                    queue.append(node)
+
         res.sort()
         return res
+        
+        
         
