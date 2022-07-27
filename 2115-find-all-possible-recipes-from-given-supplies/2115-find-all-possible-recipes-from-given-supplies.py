@@ -1,25 +1,26 @@
 class Solution:
     def findAllRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
-        supplies = set(supplies)
-        adj = defaultdict(list)
+        adj_list = defaultdict(list)
+        indegree = defaultdict(int)
         n = len(recipes)
-        in_degree = defaultdict(int)
         
         for i in range(n):
             val = recipes[i]
             for ing in ingredients[i]:
-                adj[ing].append(val)
-                in_degree[val] += 1
+                adj_list[ing].append(val)
+                indegree[val] += 1
                 
-        q = deque([i for i in supplies])
+        queue = deque([i for i in supplies])
+        ans = []
         
-        while q:
-            curr = q.popleft()
-            for nei in adj[curr]:
-                in_degree[nei] -= 1
-                if in_degree[nei] == 0: q.append(nei)
-        ans=[]
-        for recipe in recipes:
-            if in_degree[recipe] <= 0: ans.append(recipe)
+        while queue:
+            cur = queue.popleft()
+            for j in adj_list[cur]:
+                indegree[j] -= 1
+                if indegree[j] == 0:
+                    queue.append(j)
+                    ans.append(j)
+                    
         return ans
+
         
