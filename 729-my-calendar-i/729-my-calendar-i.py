@@ -23,7 +23,6 @@ class MyCalendar:
         
         self.cal.insert(l, (start, end))
         return True
-        
 
 
 # Your MyCalendar object will be instantiated and called as such:
