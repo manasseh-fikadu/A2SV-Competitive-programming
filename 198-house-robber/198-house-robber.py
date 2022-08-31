@@ -7,4 +7,5 @@ class Solution:
 
             memo[i] = max(nums[i] + dp(i+2), dp(i+1))
             return memo[i]
+        
         return dp(0)
