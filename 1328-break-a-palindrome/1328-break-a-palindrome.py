@@ -3,7 +3,6 @@ class Solution:
         palindrome = list(palindrome)
         counts = Counter(palindrome)
         n = len(palindrome)
-        flag = False
         
         if n <= 1:
             return ""
@@ -18,6 +17,3 @@ class Solution:
                 return ''.join(palindrome)
             
            
-        
-    
-    
