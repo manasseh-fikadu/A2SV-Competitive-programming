@@ -2,12 +2,12 @@ class Solution:
 
     def __init__(self, w: List[int]):
         self.w = w
-        self.s = sum(w)
-        self.l = len(w)
-        self.p = [i / self.s for i in w]
+        self.sum = sum(w)
+        self.len = len(w)
+        self.probability = [i / self.sum for i in w]
 
     def pickIndex(self) -> int:
-        return random.choices(range(self.l), weights=self.p)[0]
+        return random.choices(range(self.len), weights=self.probability)[0]
         
 
 
