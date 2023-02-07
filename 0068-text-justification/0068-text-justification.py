@@ -1,25 +1,25 @@
 class Solution:
-    def fullJustify(self, words: List[str], L: int) -> List[str]:
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         if len(words) == 0:
             return []
         if len(words) == 1:
-            return [words[0] + ' ' * (L - len(words[0]))]
+            return [words[0] + ' ' * (maxWidth - len(words[0]))]
         result = []
         i = 0
         while i < len(words):
             line = []
             line.append(words[i])
             i += 1
-            while i < len(words) and len(' '.join(line)) + len(words[i]) + 1 <= L:
+            while i < len(words) and len(' '.join(line)) + len(words[i]) + 1 <= maxWidth:
                 line.append(words[i])
                 i += 1
             if i == len(words):
-                result.append(' '.join(line) + ' ' * (L - len(' '.join(line))))
+                result.append(' '.join(line) + ' ' * (maxWidth - len(' '.join(line))))
             else:
                 if len(line) == 1:
-                    result.append(line[0] + ' ' * (L - len(line[0])))
+                    result.append(line[0] + ' ' * (maxWidth - len(line[0])))
                 else:
-                    space = L - len(''.join(line))
+                    space = maxWidth - len(''.join(line))
                     space_num = len(line) - 1
                     space_each = space // space_num
                     space_left = space % space_num
