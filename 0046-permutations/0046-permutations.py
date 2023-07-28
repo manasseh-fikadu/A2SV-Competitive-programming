@@ -1,21 +1,16 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums)
-        target = (1 << n) - 1
-        res = []
-        intermediate = []
-        
-        def helper(mask):
-            nonlocal res, intermediate
-            if target == mask:
-                res.append(list(intermediate))
+        ans = []
+        def backtrack(curr):
+            if len(curr) == len(nums):
+                ans.append(curr.copy())
                 return
-            for i in range(n):
-                if (mask & (1 << i)) == 0:
-                    intermediate.append(nums[i])
-                    helper(mask | (1 << i))
-                    intermediate.pop()
-                    
-        helper(0)
-        return res
         
+            for num in nums:
+                if num not in curr:
+                    curr.append(num)
+                    backtrack(curr)
+                    curr.pop()
+            
+        backtrack([])
+        return ans
