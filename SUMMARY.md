@@ -16,14 +16,32 @@
 * [👩💻 Project - Data Visualization with Python](data-wrangling-with-python/project-data-visualization-with-python.md)
 * [👨💻 CAPSTONE PROJECT](data-wrangling-with-python/capstone-project.md)
 
-## Team
+## Data Analysis
 
-* [👋 Meet the Team!](team/meet-the-team.md)
+* [🪄 Basics of SQL](data-analysis/meet-the-team.md)
+* [🪄 SQL for Data Analysis II](data-analysis/meet-the-team-1.md)
+* [🪄 SQL for Data Analysis III](data-analysis/meet-the-team-2.md)
+* [🪄 Practical Statistics For Data Science](data-analysis/meet-the-team-3.md)
+* [👨💻 Project - Understanding and Visualizing Data with Python](data-analysis/meet-the-team-4.md)
+* [🤷 Inferential Procedures](data-analysis/meet-the-team-5.md)
+* [🤷 Confidence Intervals](data-analysis/meet-the-team-6.md)
+* [🤷 Hypothesis Testing I](data-analysis/meet-the-team-7.md)
+* [🤷 Hypothesis Testing II](data-analysis/meet-the-team-8.md)
+* [👨💻 Project - Inferential Statistical Analysis](data-analysis/meet-the-team-9.md)
+* [🥉 Modeling Fundamentals](data-analysis/meet-the-team-10.md)
+* [🥈 Linear & Logistic Regression](data-analysis/meet-the-team-11.md)
+* [🥇 Multilevel and Marginal Models](data-analysis/meet-the-team-12.md)
+* [🏅 Introduction To Bayesian Statistics](data-analysis/meet-the-team-13.md)
+* [👨💻 Project - Statistical Modeling](data-analysis/meet-the-team-14.md)
+* [👨💻 CAPSTONE PROJECT](data-analysis/meet-the-team-15.md)
 
-## Collaborating
+## Machine Learning
 
-* [🤝 How we Work Together](collaborating/how-we-work-together.md)
-* [📅 Meetings](collaborating/meetings.md)
+* [🎰 Introduction to Machine Learning ](machine-learning/how-we-work-together.md)
+* [🎰 Machine Learning Projects ](machine-learning/how-we-work-together-1.md)
+* [🎰 KNNs, Decision Trees, and Random Forests](machine-learning/how-we-work-together-2.md)
+* [🎰 Support Vector Machines](machine-learning/how-we-work-together-3.md)
+* [👨💻 Project - Supervised Machine Learning Fundamentals](machine-learning/how-we-work-together-4.md)
 
 ## Policies
 
