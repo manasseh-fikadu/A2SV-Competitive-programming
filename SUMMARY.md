@@ -42,7 +42,23 @@
 * [🎰 KNNs, Decision Trees, and Random Forests](machine-learning/how-we-work-together-2.md)
 * [🎰 Support Vector Machines](machine-learning/how-we-work-together-3.md)
 * [👨💻 Project - Supervised Machine Learning Fundamentals](machine-learning/how-we-work-together-4.md)
+* [🐓 Gradient Boosted Trees, XGBoost, CatBoost, and LightGBM](machine-learning/how-we-work-together-5.md)
+* [🐓 Feature Engineering](machine-learning/how-we-work-together-6.md)
+* [🐓 Interpretable & Responsible Machine Learning](machine-learning/how-we-work-together-7.md)
+* [🐓 Maintaining Machine Learning Models](machine-learning/how-we-work-together-8.md)
+* [🐓 Gradient Boosted Trees & Feature Engineering](machine-learning/how-we-work-together-9.md)
+* [🎲 Dimensionality Reduction](machine-learning/how-we-work-together-10.md)
+* [🎲 Clustering](machine-learning/how-we-work-together-11.md)
+* [🎲 Working with Imbalanced Data](machine-learning/how-we-work-together-12.md)
+* [🎲 Hyperparameter Turning & Model Selection](machine-learning/how-we-work-together-13.md)
+* [👨💻 Unsupervised Learning & Hyperparameter Tuning](machine-learning/how-we-work-together-14.md)
+* [👨💻 CAPSTONE PROJECT](machine-learning/how-we-work-together-15.md)
 
-## Policies
+## Deep Learning
 
-* [🌴 Requesting Time Off](policies/requesting-time-off.md)
+* [🕸 Deep Learning Fundamentals](deep-learning/requesting-time-off.md)
+* [🔥 PyTorch](deep-learning/requesting-time-off-1.md)
+* [🖼 Convolutional Neural Networks](deep-learning/requesting-time-off-2.md)
+* [🌐 Transfer Learning](deep-learning/requesting-time-off-3.md)
+* [👨💻 Project - Computer Vision](deep-learning/requesting-time-off-4.md)
+* [🤩 More Coming Soon...](deep-learning/requesting-time-off-5.md)
