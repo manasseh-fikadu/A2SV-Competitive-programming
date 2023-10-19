@@ -37,8 +37,8 @@
 
 ## Machine Learning
 
-* [🎰 Introduction to Machine Learning ](machine-learning/how-we-work-together.md)
-* [🎰 Machine Learning Projects ](machine-learning/how-we-work-together-1.md)
+* [🎰 Introduction to Machine Learning](machine-learning/how-we-work-together.md)
+* [🎰 Machine Learning Projects](machine-learning/how-we-work-together-1.md)
 * [🎰 KNNs, Decision Trees, and Random Forests](machine-learning/how-we-work-together-2.md)
 * [🎰 Support Vector Machines](machine-learning/how-we-work-together-3.md)
 * [👨💻 Project - Supervised Machine Learning Fundamentals](machine-learning/how-we-work-together-4.md)
@@ -61,4 +61,9 @@
 * [🖼 Convolutional Neural Networks](deep-learning/requesting-time-off-2.md)
 * [🌐 Transfer Learning](deep-learning/requesting-time-off-3.md)
 * [👨💻 Project - Computer Vision](deep-learning/requesting-time-off-4.md)
+* [👨🌾 Transformers Part 1](deep-learning/requesting-time-off-4-1.md)
+* [👨🌾 Transformers Part 2](deep-learning/requesting-time-off-4-2.md)
+* [🌀 Recurrent Neural Networks](deep-learning/requesting-time-off-4-3.md)
+* [🕵 Generative models](deep-learning/requesting-time-off-4-4.md)
+* [👨💻 Project - Natural Language Processing](deep-learning/requesting-time-off-4-5.md)
 * [🤩 More Coming Soon...](deep-learning/requesting-time-off-5.md)
