@@ -71,3 +71,4 @@
 * [🚚 Delivering ML Projects](deep-learning/requesting-time-off-5-2.md)
 * [🩺 Practical AI Ethics](deep-learning/requesting-time-off-5-3.md)
 * [👨💻 Project - Practical Deep Learning](deep-learning/requesting-time-off-5-4.md)
+* [👨💻 Capstone Project](deep-learning/requesting-time-off-5-4-1.md)
